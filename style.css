@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.screen {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #dfdfdf;
+}
+.game {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.game__greed {
+	padding: 10px;
+}
+.greed {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+}
+.greed__cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #333;
+}
+.greed__cell.xmark {
+	background-color: yellow;
+}
+.greed__cell.null {
+	background-color: green;
+}
+.greed__cell.win {
+	background-color: red;
+}
